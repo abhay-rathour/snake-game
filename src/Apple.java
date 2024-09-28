@@ -1,3 +1,4 @@
+// This class will handle the location as well as the generation of apple on the board
 public class Apple {
 	private int  x;
 	private int y;
