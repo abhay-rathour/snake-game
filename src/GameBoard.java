@@ -1,10 +1,10 @@
+//This will be the main class conecting different smaller components together with controller
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
