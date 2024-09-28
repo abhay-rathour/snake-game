@@ -9,6 +9,7 @@ public class Apple {
 		x = (int)(Math.random()*RAND_POS) * DOT_SIZE;
 		y = (int)(Math.random()*RAND_POS) * DOT_SIZE;
 	}
+	//Public method to generate apple at a random position
 	public void randomizePosition(){
 		x = (int)(Math.random()*RAND_POS) * DOT_SIZE;
 		y = (int)(Math.random()*RAND_POS) * DOT_SIZE;

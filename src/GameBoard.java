@@ -21,6 +21,7 @@ public class GameBoard extends JPanel implements ActionListener{
 	public GameBoard(){
 		initBoard();
 	}
+	//Initialising the game board
 	private void initBoard(){
 		setBackground(Color.BLACK);
 		setFocusable(true);
@@ -31,12 +32,15 @@ public class GameBoard extends JPanel implements ActionListener{
 		addKeyListener(new InputHandler(snake));
 		initGame();
 	}
+	
+	//starting the game
 	private void initGame(){
 		apple.randomizePosition();
 		timer = new Timer(DELAY, this);
 		timer.start();
 	}
 
+	//Paint function to paint the game graphics
 	@Override
 	protected void paintComponent(Graphics g){
 		if(controller.isInGame()){
@@ -50,6 +54,7 @@ public class GameBoard extends JPanel implements ActionListener{
 		}
 
 	}
+	//Event listioner to update the game on each key press
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(controller.isInGame()){
