@@ -1,3 +1,4 @@
+//This is the main controller class which will control the main logical gameplay
 public class GameController {
 	private final Snake snake;
 	private final Apple apple;
