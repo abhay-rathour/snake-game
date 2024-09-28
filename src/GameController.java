@@ -12,22 +12,25 @@ public class GameController {
 		this.B_WIDTH = width;
 		this.B_HEIGHT = height;
 	}
-
+	//update the gameboard after every delay
 	public void updateGame(){
 		snake.move();
 		checkApple();
 		checkCollision();
 	}
+	//check if we are still in game or gameOver
 	public boolean isInGame(){
 		return inGame;
 	}
 
+	//If snake eats apple, snake grows by size 1
 	private void checkApple(){
 		if(snake.getX()[0] == apple.getX() && snake.getY()[0] == apple.getY()){
 			snake.grow();
 			apple.randomizePosition();
 		}
 	}
+	//Cheking the collision conditions for game over
 	private void checkCollision(){
 		for(int i=0;i<snake.getDots();i++){
 			if((i>3)&&(snake.getX()[0]==snake.getX()[i])&&(snake.getY()[0]==snake.getY()[i])){

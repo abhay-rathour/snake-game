@@ -1,12 +1,16 @@
+//This class will handle everything related to snake object
 public class Snake {
 	private final int DOT_SIZE = 10;
 	private final int ALL_DOTS = 29;
 
+	//XY cordinate of each body dot of snake
 	private final int[] x = new int[ALL_DOTS];
 	private final int[] y = new int[ALL_DOTS];
 
+	//size of snake
 	private int dots;
 
+	//direction of motion
 	private boolean left=false;
 	private boolean right=true;
 	private boolean up=false;
@@ -17,6 +21,7 @@ public class Snake {
 		initSnake();
 	}
 
+	//Initialising snake with size 3 and starting from 50,50 moving towards right
 	private void initSnake(){
 		dots=3;
 		for(int i=0;i<dots;i++){
@@ -25,6 +30,7 @@ public class Snake {
 		}
 	}
 
+	//Move the snake one dot in the direction of motion
 	public void move(){
 		for(int i=dots;i>0;i--){
 			x[i]=x[i-1];
@@ -44,9 +50,11 @@ public class Snake {
 		}
 	}
 
+	//increase the size by 1
 	public void grow(){
 		dots++;
 	}
+	//Getters for the body points
 	public int[] getX(){
 		return x;
 	}
@@ -56,6 +64,8 @@ public class Snake {
 	public int getDots(){
 		return dots;
 	}
+
+	//Getters and setters for the direction of motion
 	public boolean isLeft(){
 		return left;
 	}

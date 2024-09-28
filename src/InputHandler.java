@@ -5,10 +5,13 @@ import java.awt.event.KeyEvent;
 public class InputHandler extends KeyAdapter {
 
 	private final Snake snake;
+	
+	// Inititialising this handler with the snake in our game
 	public InputHandler(Snake snake) {
 		this.snake = snake;
 	}
 
+	//On Each Keypress changing the direction according to the valid arrow keypress
 	@Override
 	public void keyPressed(KeyEvent e) {
 		int key = e.getKeyCode();
