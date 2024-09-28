@@ -1,3 +1,4 @@
+// This class will handle all the user interactions in game
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
