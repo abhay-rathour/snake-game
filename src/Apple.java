@@ -5,7 +5,8 @@ public class Apple {
 	private final int RAND_POS = 29;
 
 	public Apple(){
-		randomizePosition();
+		x = (int)(Math.random()*RAND_POS) * DOT_SIZE;
+		y = (int)(Math.random()*RAND_POS) * DOT_SIZE;
 	}
 	public void randomizePosition(){
 		x = (int)(Math.random()*RAND_POS) * DOT_SIZE;

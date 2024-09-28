@@ -1,6 +1,6 @@
 public class GameController {
-	private Snake snake;
-	private Apple apple;
+	private final Snake snake;
+	private final Apple apple;
 	private boolean inGame = true;
 	private final int B_WIDTH;
 	private final int B_HEIGHT;
