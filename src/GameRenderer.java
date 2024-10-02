@@ -38,7 +38,7 @@ public class GameRenderer {
 		Font small = new Font("Arial", Font.BOLD,14);
 		FontMetrics metric = panel.getFontMetrics(small);
 		g.setFont(small);
-		g.setColor(Color.WHITE);
+		g.setColor(Color.RED);
 		g.drawString(msg,(panel.getWidth()-metric.stringWidth(msg))/2,panel.getHeight()/2);
 	}
 }

@@ -23,7 +23,7 @@ public class GameBoard extends JPanel implements ActionListener{
 	}
 	//Initialising the game board
 	private void initBoard(){
-		setBackground(Color.BLACK);
+		setBackground(Color.lightGray);
 		setFocusable(true);
 		setPreferredSize(new Dimension(B_WIDTH, B_HEIGHT));
 		snake = new Snake();
